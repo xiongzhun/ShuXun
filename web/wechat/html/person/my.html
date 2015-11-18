@@ -7,7 +7,7 @@
         <!-- 我的基本信息-->
         <ion-item class="item-divider item-button-right">我的信息
             <button class="button button-clear button-balanced"
-                    ui-sref="person.edit-person-info">修改信息
+                    ui-sref="person.edit-person-info">修改
             </button>
         </ion-item>
         <ion-user-info ng-if="user" user="user" hide-used-book="true"></ion-user-info>
@@ -23,7 +23,7 @@
                            ng-bind="Status$.ReviewUsedBookStatus.unreadCount"></span>
         </ion-item>
         <ion-item ui-sref="person.status-list({cmd:'newUsedBook'})">
-            我关注的同学新上传的旧书<span class="badge badge-assertive"
+            我关注的同学新上传的书<span class="badge badge-assertive"
                               ng-if="Status$.NewUsedBookStatus.unreadCount>0"
                               ng-bind="Status$.NewUsedBookStatus.unreadCount"></span>
         </ion-item>
